@@ -3,6 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
+import { FormComponent } from './form/form.component';
+import { ResultComponent } from './result/result.component';
+import { MainComponent } from './main/main.component';
+import {MainModule} from "./main/main.module";
 
 @NgModule({
   declarations: [
@@ -11,6 +15,7 @@ import {HttpClientModule} from "@angular/common/http";
   imports: [
     BrowserModule,
     HttpClientModule,
+    MainModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
